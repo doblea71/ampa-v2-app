@@ -1,0 +1,15 @@
+{
+	"appId": "com.ampa.app",
+	"productName": "Sveltekit Electron",
+	"directories": {
+		"output": "dist"
+	},
+	"files": [
+		"src/lib/electron.cjs",
+		"src/lib/preload.cjs",
+		{
+			"from": "build",
+			"to": ""
+		}
+	]
+}
