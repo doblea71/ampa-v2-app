@@ -35,7 +35,9 @@
 		"electron-reloader": "^1.2.3",
 		"electron-serve": "^1.1.0",
 		"electron-squirrel-startup": "^1.0.1",
-		"electron-window-state": "^5.0.3"
+		"electron-window-state": "^5.0.3",
+		"sequelize": "^6.37.5",
+		"sqlite3": "^5.1.7"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "2.0.1",
