@@ -17,7 +17,7 @@
 			{/key}
 		</div>
 		<!-- // Footer de la pagina  -->
-		<div class="fixed bottom-0 w-full p-4">
+		<div class="fixed bottom-0 w-full p-0">
 			<Footer />
 		</div>
 	</main>
