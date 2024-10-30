@@ -17,15 +17,15 @@ let mainWindow;
 
 function createWindow() {
 	let windowState = windowStateManager({
-		defaultWidth: 1024,
-		defaultHeight: 650,
+		defaultWidth: 1200,
+		defaultHeight: 700,
 	});
 
 	const mainWindow = new BrowserWindow({
-		minWidth: 1024,
-		minHeight: 650,
-		maxWidth: 1024,
-		maxHeight: 650,
+		minWidth: 1200,
+		minHeight: 700,
+		maxWidth: 1200,
+		maxHeight: 700,
 		webPreferences: {
 			enableRemoteModule: true,
 			nodeIntegration: true,
