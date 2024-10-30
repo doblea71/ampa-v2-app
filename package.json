@@ -8,10 +8,11 @@
 	"author": "Design & Develope: Angel Emiro Antunez Villasmil. Template: Mattia Bottes",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=dev npm run dev:all",
-		"dev:all": "concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
+		"dev:all": "npm run build:css && concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
 		"dev:svelte": "vite dev --host",
 		"dev:electron": "wait-on http://localhost:5173 && electron src/lib/electron.cjs",
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
+		"build:css": "tailwindcss -i ./src/assets/css/input.css -o ./static/assets/css/style.css --minify",
 		"build:svelte": "vite build",
 		"build:electron": "electron-builder --config build.config.json"
 	},

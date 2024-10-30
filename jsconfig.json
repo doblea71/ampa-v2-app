@@ -7,5 +7,5 @@
 		"$assets/*": ["src/assets/*"],
 	  }
 	},
-	"exclude": ["node_modules", "build", "dist"]
+	"exclude": ["node_modules", "build", "dist"],
   }

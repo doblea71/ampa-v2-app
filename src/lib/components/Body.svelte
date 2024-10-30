@@ -1,5 +1,6 @@
 <!-- src/components/Body.svelte -->
-<main class="p-6">
+<!-- Main Content -->
+<main class="flex-1 p-8 overflow-auto">
 	<slot />
 	<!-- Espacio para contenido dinámico -->
 </main>
